@@ -1,0 +1,28 @@
+html,
+body {
+  font-family: 'Times New Roman', serif;
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  
+  color: #000000;
+  font-size: 4vw;
+  font-weight: 100;
+  text-transform: lowercase;
+  text-align: middle;
+  
+}
+.dud {
+  color: #757575;
+}
