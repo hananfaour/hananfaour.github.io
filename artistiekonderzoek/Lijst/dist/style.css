@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,800");
+body {
+  background-color: #fff;
+}
+body h1 {
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: black;
+  font-size: 50px;
+  font-weight: normal;
+}
+body .adder {
+  position: relative;
+  width: 250px;
+  margin: 0px auto;
+  display: block;
+}
+body .adder ::-webkit-input-placeholder {
+  color: #cecece;
+}
+body .adder .input {
+  outline: none;
+  border: 1px solid white;
+  background-color: #0072ff;
+  color: white;
+  border-color: black;
+  height: 50px;
+  width: 250px;
+  padding-left: 10px;
+  font-family: "Georgia", serif;
+  font-weight: 800;
+  font-size: 16px;
+  margin-left: -5px;
+}
+body .adder span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 200ms;
+  color: white;
+  will-change: transform;
+}
+body .adder span:hover {
+  transform: rotate(180deg);
+}
+body ul {
+  padding: 0px;
+}
+body ul .draggable {
+  will-change: transform;
+  font-family: "Georgia", serif;
+  font-weight: 300;
+  height: relative;
+  list-style-type: none;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  width: 400px;
+  line-height: 1.5;
+  padding-left: 10px;
+  cursor: move;
+  transition: all 200ms;
+  user-select: none;
+  margin: 10px auto;
+  position: relative;
+}
+body ul .draggable:after {
+  content: 'verplaats mij';
+  right: 7px;
+  font-size: 10px;
+  position: absolute;
+  cursor: pointer;
+  line-height: 5;
+  transition: all 200ms;
+  transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
+  transform: translateX(120%);
+  opacity: 0;
+}
+body ul .draggable:hover:after {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.over {
+  transform: scale(1.1, 1.1);
+}
