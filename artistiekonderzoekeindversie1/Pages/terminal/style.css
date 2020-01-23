@@ -1,0 +1,495 @@
+@charset "UTF-8";
+html, body {
+  font-size: 16px;
+}
+
+
+
+body {
+  background-color: #fff;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  font-family: Georgia, sans-serif;
+  color: #000;
+
+}
+
+
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 28px;
+  font-family: Georgia, sans-serif;
+  line-height:0.2;
+}
+
+span {
+  font-size: 1rem;
+}
+
+.flex-container {
+  padding: 20px;
+  margin: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Georgia, sans-serif;
+
+
+}
+
+.flex-item {
+  background: white;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  padding: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 20px;
+  color: black
+  font-weight: normal;
+  font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Georgia, sans-serif;
+
+}
+
+.one {
+  width: 300px;
+}
+
+.two {
+  width: 150px;
+}
+
+.three {
+  width: 900px;
+}
+
+.foto {
+  width: 800px;
+}
+
+.four {
+  width: 250px;
+  height: 100%;
+}
+
+.five {
+  width: 500px;
+}
+
+/*artikel*/
+
+@charset "UTF-8";
+html, body {
+  font-size: 1rem;
+}
+
+a {
+  color: #5887CA;
+  text-decoration: underline;
+}
+a:hover {
+  color: #000;
+  background-color: #5887CA;
+}
+
+article {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.footnote-ref {
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 0, "dlig" 0, "sups" 0;
+          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 0, "dlig" 0, "sups" 0;
+}
+.footnote-ref a {
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.sidenote {
+  display: none;
+  padding-bottom: 0.6em;
+  font-family: "Georgia", serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #000;
+}
+.sidenote .footnote-backref {
+  display: none;
+}
+.sidenote .sidenote-title:before {
+  content: "→";
+  margin-right: 0.6em;
+  font-weight: bold;
+}
+.sidenote .sidenote-number {
+  margin-right: 0.6em;
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.sidenote p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidenote p + p {
+  margin-top: 0.3em;
+}
+
+header, .content {
+  max-width: 32em;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content.has-sidenotes a:hover + .sidenote .sidenote-title:before,
+.content.has-sidenotes a:hover + .sidenote .sidenote-number, .content.has-sidenotes .footnote-ref:hover + .sidenote .sidenote-title:before,
+.content.has-sidenotes .footnote-ref:hover + .sidenote .sidenote-number {
+  background-color: #5887CA;
+}
+
+@media screen and (min-width: 45em) {
+  /**
+   * Layout:
+   *
+   * | ------------------------------------ | | ---------------- |
+   * | lorem ipsum dolor .................. | | side note ...... |
+   * | ------------------------------------ | | ---------------- |
+   *
+   * based on the sizes:
+   *
+   * | ----- $article-width --------------- | | - $side-width -- |
+   *                               $gutter --^
+   *
+   * where `$side` and $gutter are in percent relative to `$article-width`, but
+   * only `$article-width` and `$gutter` are given.
+   */
+  .content.has-sidenotes {
+    max-width: 60em;
+    *zoom: 1;
+  }
+  .content.has-sidenotes:before, .content.has-sidenotes:after {
+    display: table;
+    content: "";
+  }
+  .content.has-sidenotes:after {
+    clear: both;
+  }
+  .content.has-sidenotes > *:not(.sidenote) {
+    width: 70%;
+    box-sizing: border-box;
+  }
+  .content.has-sidenotes .sidenote {
+    display: block;
+    float: right;
+    clear: right;
+    margin-right: -42.8571428571%;
+    width: 37.8571428571%;
+    vertical-align: baseline;
+    position: relative;
+  }
+  .content.has-sidenotes .footnotes,
+  .content.has-sidenotes .footnotes-sep {
+    display: none;
+  }
+}
+
+/* WHATSAPP */
+body {
+font-family: "Helvetica Neue", Helvetica;
+}
+
+
+.msg {
+  width: 100%;
+  height: auto;
+  
+}
+.msg .bubble {
+  float: left;
+  max-width: 75%;
+  width: auto;
+  height: auto;
+  display: block;
+  background: #ebebeb;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px 0 3px 25px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.msg .bubble.alt {
+  margin: 10px 25px 3px 0px;
+  background: #DCF8C6;
+  float: right;
+}
+.msg .bubble.follow {
+  margin: 2px 0 3px 25px;
+}
+.msg .bubble.altfollow {
+  margin: 2px 25px 3px 0px;
+  background: #DCF8C6;
+  float: right;
+}
+.msg .bubble .txt {
+  padding: 8px 0 8px 0;
+  width: 100%;
+
+}
+.msg .bubble .txt .message {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 15px 0 15px;
+  margin: auto;
+  color: #2b2b2b;
+  display: table;
+}
+
+.msg .bubble .bubble-arrow {
+  position: absolute;
+  float: left;
+  left: -11px;
+  top: 0px;
+}
+.msg .bubble .bubble-arrow.alt {
+  bottom: 20px;
+  left: auto;
+  right: 4px;
+  float: right;
+}
+.msg .bubble .bubble-arrow:after {
+  content: "";
+  position: absolute;
+  border-top: 15px solid #ebebeb;
+  border-left: 15px solid transparent;
+  border-radius: 4px 0 0 0px;
+  width: 0;
+  height: 0;
+}
+.msg .bubble .bubble-arrow.alt:after {
+  border-top: 15px solid #DCF8C6;
+  transform: scaleX(-1);
+}
+
+/** DRAG AND DROP CSS */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,800");
+body {
+  background-color: #fff;
+}
+body h1 {
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: black;
+  font-size: 50px;
+  font-weight: normal;
+}
+body .adder {
+  position: relative;
+  width: 250px;
+  margin: 0px auto;
+  display: block;
+}
+body .adder ::-webkit-input-placeholder {
+  color: #cecece;
+}
+body .adder .input {
+  outline: none;
+  border: 1px solid white;
+  background-color: #0072ff;
+  color: white;
+  border-color: black;
+  height: 50px;
+  width: 250px;
+  padding-left: 10px;
+  font-family: "Georgia", serif;
+  font-weight: 800;
+  font-size: 16px;
+  margin-left: -5px;
+}
+body .adder span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 200ms;
+  color: white;
+  will-change: transform;
+}
+body .adder span:hover {
+  transform: rotate(180deg);
+}
+body ul {
+  padding: 0px;
+}
+body ul .draggable {
+  will-change: transform;
+  font-family: "Georgia", serif;
+  font-weight: 300;
+  height: relative;
+  list-style-type: none;
+  margin: 10px;
+  background-color: #F3F3F3;
+  color: black;
+  width: 400px;
+  line-height: 1.5;
+  padding-left: 10px;
+  cursor: move;
+  transition: all 200ms;
+  user-select: none;
+  margin: 10px auto;
+  position: relative;
+}
+body ul .draggable:after {
+  content: 'verplaats mij';
+  right: 7px;
+  font-size: 10px;
+  position: absolute;
+  cursor: pointer;
+  line-height: 5;
+  transition: all 200ms;
+  transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
+  transform: translateX(120%);
+  opacity: 0;
+}
+body ul .draggable:hover:after {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.over {
+  transform: scale(1.1, 1.1);
+}
+
+/** AAN-UIT */
+
+/**
+ * Switch Styles by Alexandre Joffroy
+ * - https://codepen.io/alexjoffroy/pen/ORXOmR
+ */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+.switch {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch .slider {
+  position: relative;
+  display: inline-block;
+  height: 8px;
+  width: 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #3b424d;
+  transition: all 0.2s ease;
+}
+.switch .slider:after {
+  background: black;
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  content: '';
+  transition: all 0.2s ease;
+}
+.switch label {
+  width: 200px;
+  margin-left: 25px;
+
+}
+.switch .input {
+  display: none;
+}
+.switch .input:checked ~ .slider:after {
+  left: 16px;
+}
+.switch .input:checked ~ .slider {
+  background: #4a75bd;
+}
+.switch .input:checked ~ .slider:after {
+  background: #2d6dd8;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+
+}
+
+.center {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+
+ /** TERMINAL */
+
+ * {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.terminal {
+  background: transparent;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-top: 0;
+  margin-left: -125px;
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.4);
+  width: 250px;
+  border: none;
+  outline: none;
+  color: inherit;
+  font: "Georgia", serif;
+}
+
+.dollar:before {
+  content:;
+  color: black;
+}
+
+.home {
+  color: black;
+  padding-bottom: 3px;
+}
+
+a {
+  font: 100% "Georgia", serif;
+  text-decoration: underline;
+  color: black;
+}
+      -ms-user-select: none;
+          user-select: none;
+  width: 300px;
+}

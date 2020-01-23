@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>zondagnacht 2:06, online marktonderzoek</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <header>
+    <p style="position: absolute; right: 5rem; top:-1rem">
+<button onclick="goBack()">terug</button>
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
+</p>
+  </header>
+<!-- partial:index.partial.html -->
+<div id="form-outer">
+  <p id="description">
+  </p>
+  <form id="survey-form" method="GET" onsubmit=getInputElements()
+        action="https://crossorigin.me/https://freecodecamp.com">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="Naam">Naam:</label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="Naam" id="Naam" class="input-field" placeholder="" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">Leeftijd:</label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="">
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">Beroep:</label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">Geboorteland:</label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="etniciteit">Etniciteit:
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+            <li class="radio">
+            <label>Wit<input name="radio buttons" value="1" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Spaans of latino<input name="radio buttons" value="2" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Zwart of Afrikaans Amerikaans<input name="radio buttons" value="3" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Native American of American Indian<input name="radio buttons" value="4" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Aziatisch of Pacifisch eilandbewoner<input name="radio buttons" value="5" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Anders<input name="radio buttons" value="6" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Moet ik kiezen?<input name="radio buttons" value="7" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Zijn er serieus maar zes opties?<input name="radio buttons" value="8" type="radio" class="userRatings" ></label></li>
+            <label>En is Spaans niet ook wit? <input name="radio buttons" value="9" type="radio" class="userRatings" ></label></li><br>
+            <label>En is Arabisch Aziatisch of overig? <input name="radio buttons" value="10" type="radio" class="userRatings" ></label></li><br>
+            <label>En is Noord-Afrikaans zwart? <input name="radio buttons" value="10" type="radio" class="userRatings" ></label></li><br>
+            <label>En waar is Zuid-Amerika?<input name="radio buttons" value="10" type="radio" class="userRatings" ></label></li>
+            <li class="radio">
+            <label>Moet ik écht kiezen?<input name="radio buttons" value="1" type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+
+<div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Stel: je bent een product, hoe makkelijk zou je dan te marketen zijn? Het begrip product mag je breed benaderen (een televisiepersoonlijkheid, koekjesmerk, telefoon of kledingmerk zijn een paar mogelijkheden.)</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">Niet makkelijk: mijn eigenschappen zijn generiek en ik ben inwisselbaar.</option>
+      <option value="sports">Niet heel erg makkelijk: niks aan mij is heel sprekend of anders, maar met een goed marketingteam moet het wel te doen zijn.</option>
+      <option value="learner">Niet heel erg makkelijk maar ook niet heel erg moeilijk: het ligt aan de marktconcurrentie.</option>
+      <option value="preferNo">Waarschijnlijk wel makkelijk: ik heb een verhaal wat pakkend genoeg is om bij DWDD te verkondigen.</option>
+      <option value="other">Heel makkelijk: je kan me in een doos stoppen, hem labelen en dichtplakken (wel gaatjes in de deksel prikken zodat ik kan ademen).</option>
+    </select>
+      </div>
+    </div>
+
+<div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Stel: je vraagt een subsidie aan, hoe groot schat je de kans dat deze wordt verstrekt?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">Nihiel</option>
+      <option value="sports">Klein</option>
+      <option value="sports">Gemiddeld</option>
+      <option value="learner">Groot</option>
+      <option value="preferNo">Heel groot</option>
+    </select>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Stel: je krijgt de subsidie, ben je dan blij?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">Ja</option>
+    </select>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Stel: je krijgt de subsidie, zal je dan twijfelen aan of de subsidie verdiend is? Of het idee waarvoor je de aanvraag hebt gedaan wel goed genoeg was? Gaan anderen twijfelen?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">Nee, ik ga niet twijfelen en anderen ook niet.</option>
+      <option  value="reading">Ja, ik ga twijfelen en anderen ook.</option>
+      <option  value="reading">Nee, ik ga niet twijfelen maar anderen wel.</option>
+      <option  value="reading">Ja, ik ga wel twijfelen maar anderen niet.</option>
+    </select>
+      </div>
+    </div>
+ 
+
+  <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Hoe zeker ben je over je antwoord op de vorige vraag?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">Heel zeker: ik wist meteen wat ik in wilde vullen, nog voordat ik de keuzeopties bekeek.</option>
+      <option  value="reading">Zeker: er zat een duidelijk antwoord voor mij tussen de opties.</option>
+      <option  value="reading">Niet zeker, niet onzeker: ik ben onverschillig ten opzichte van de vraag.</option>
+      <option  value="reading">Onzeker: ik denk dat ik de vraag nog een keer moet lezen en mijn antwoord moet heroverwegen.</option>
+      <option  value="reading">Heel onzeker: ik heb mijn antwoord al drie keer veranderd en weet nog steeds niet wat ik moet invullen.</option>
+    </select>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Tegen wie keek je op toen je jong was?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Typ hier..."></textarea>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Tegen wie kijk je nu op?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Typ hier..."></textarea>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Stel: je loopt een kamer in. Er zijn 50 mensen in die kamer en je ziet ze allemaal. Hoeveel van die 50 mensen lijken op jou?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">10</option>
+      <option  value="reading">50</option>
+      <option  value="reading">25</option>
+      <option  value="reading">16</option>
+      <option  value="reading">0</option>
+      <option  value="reading">42</option>
+      <option  value="reading">33</option>
+      <option  value="reading">1</option>
+      <option  value="reading">21</option>
+      <option  value="reading">39</option>
+    </select>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label 
+               for="preferences">Stel: je bent die kamer van net ingelopen. Waar zou je willen gaan zitten of staan?<br>(Kruis alles aan wat van toepassing is, je hoeft niet op één plek te blijven):</label>
+      </div>
+      <div class="rightTab">
+     <ul li="preferences" style="list-style:none;">
+       <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Tegen de muur links van de vensterbank waar twee vetplantjes op staan</label></li>
+       <li class="checkbox"><label><input name="prefer" value="2"
+       type="checkbox"class="userRatings">Op de groene bank</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer" value="3" type="checkbox"class="userRatings">Rechts van de deuropening</label></li>
+       <li class="checkbox"><label>
+         <input name="prefer"value="4" type="checkbox"class="userRatings">Op de hoek van de tafel waar iedereen zijn jassen op heeft gestapeld</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="5" type="checkbox"class="userRatings">Op een van de stoelen van de kring in het midden van de kamer</label></li>
+       
+       <li class="checkbox"><label>
+         <input
+        name="prefer"value="6"
+         type="checkbox"class="userRatings">In de rechterhoek van de kamer waar iemand een zitzak heeft neergezet</label></li>
+                                          <li class="checkbox"><label>
+         <input name="prefer"value="7" type="checkbox"class="userRatings">Op de vensterbank (je zet de vetplantjes op de grond voor je neer)</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="8" type="checkbox"class="userRatings">Onder de tafel (je pakt een paar jassen van de tafel af en gebruikt ze als kussen</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Ergens op de grond in kleermakerszit</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="10" type="checkbox"class="userRatings">In de deuropening</label></li>
+       </ul>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Beschrijf jezelf in drie zinnen.</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Typ hier..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Beschrijf jezelf in twee zinnen.</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Typ hier..."></textarea>
+      </div>
+    </div>
+
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Beschrijf jezelf in een woord.</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Typ hier..."></textarea>
+      </div>
+    </div>
+
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label 
+               for="preferences">Stel: je bent terug in die kamer van net en iemand spreekt je aan. Diegene zegt: "Hoi. Mag ik erbij komen staan of zitten?" Vorm met de zinnen hiernaast wat je gesprekspartner de rest van het gesprek tegen je zegt.<br>(Kruis alles aan wat van toepassing is. Je mag hardop antwoorden, maar dat hoeft niet.):</label>
+      </div>
+      <div class="rightTab">
+     <ul li="preferences" style="list-style:none;">
+       
+       <li class="checkbox"><label>
+         <input name="prefer" value="3" type="checkbox"class="userRatings">Hoe is het?</label></li>
+       <li class="checkbox"><label>
+         <input name="prefer"value="4" type="checkbox"class="userRatings">Je komt me bekend voor. Kan dat?</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="5" type="checkbox"class="userRatings">Zit je wel comfortabel?</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Hoe ben jij hier terecht gekomen?</label></li>
+
+       <li class="checkbox"><label>
+         <input
+        name="prefer"value="6"
+         type="checkbox"class="userRatings">Ken je hier ook niemand?</label></li>
+                                          <li class="checkbox"><label>
+         <input name="prefer"value="7" type="checkbox"class="userRatings">Ja.</label></li>
+       
+       <li class="checkbox"><label>
+         <input name="prefer"value="8" type="checkbox"class="userRatings">Dat zijn vetplantjes, toch?</label></li>
+
+         
+       
+          <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Hoe heet je?</label></li> 
+      
+
+        <li class="checkbox"><label>
+         <input name="prefer"value="10" type="checkbox"class="userRatings">Wat bijzonder, zeg.</label></li>
+
+        <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">En wat doe je verder in het dagelijks leven?</label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="10" type="checkbox"class="userRatings">Dat had ik nou niet verwacht.</label></li>
+
+        <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Stel je mag de rest van je leven nog maar één kleur voedsel eten, dan zou dat toch groen zijn?</label></li>
+
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="11" type="checkbox"class="userRatings">Daar heb ik nog nooit van gehoord. Wat speciaal.</label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="10" type="checkbox"class="userRatings">Knap, joh.</label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Bruin?</label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Misschien een beetje cliché, ja. </label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="10" type="checkbox"class="userRatings">Dat had ik nou niet verwacht.</label></li>
+
+        <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Het is wel echt kutweer buiten.</label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Ja, dat ken ik wel. De stiefzus van de oom van mijn beste vriend is daar een keer geweest volgens mij. </label></li>
+
+        <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Zal ik even wat drinken halen?</label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="10" type="checkbox"class="userRatings">Ik spreek het goed uit, toch?</label></li>
+
+         <li class="checkbox"><label>
+         <input name="prefer"value="9" type="checkbox"class="userRatings">Je bent tien en in de klas worden er chipszakjes getrakteerd: pak je de wokkels of de hamka's?</label></li>
+
+       </ul>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Beschrijf jezelf in een marketingslogan. Het moet rijmen.</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Typ hier..."></textarea>
+      </div>
+    </div>
+
+<div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Stel, die kamer van net is een café en je bent op een borrel en op de borrel probeer je het product (dat ben jij, zie vraag 6) te verkopen: wil je het gesprek wat je hebt gevoerd herzien?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">Ja</option>
+      <option  value="reading">Nee</option>
+    </select>
+      </div>
+    </div>
+
+<div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Stel, die kamer van net is een café en je bent op een borrel en op de borrel probeer je het product (dat ben jij, zie vraag 6) te verkopen: wil je nog in die kamer zijn?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Selecteer een optie</option>
+      <option  value="reading">Nee</option>
+      <option  value="reading">Ja</option>
+    </select>
+      </div>
+    </div>
+
+  </form>
+</div>
+<!-- partial -->
+
+</body>
+</html>
